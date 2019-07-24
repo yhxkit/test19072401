@@ -17,6 +17,8 @@ public class TestController {
     @GetMapping({"","/"})
     public String mainpage(Model model) {
         model.addAttribute("people", personService.getPeople());
+        System.out.println("브랜치 01의 두번째 수정");
+
         return "main";
     }
 
