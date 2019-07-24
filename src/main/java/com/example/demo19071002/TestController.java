@@ -16,6 +16,7 @@ public class TestController {
 
     @GetMapping({"","/"})
     public String mainpage(Model model) {
+        System.out.println("브랜치 01-1은 이미 나갔다,,");
         model.addAttribute("people", personService.getPeople());
         return "main";
     }
